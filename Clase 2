@@ -1,0 +1,47 @@
+##### Airpassengers#####
+install.packages("forescast")
+require(forescast)
+View(AirPassengers)
+
+help(AirPassengers)
+
+class(AirPassengers)
+start(AirPassengers)
+print(AirPassengers)
+length(AirPassengers)
+head(AirPassengers,n=8)# muestra los primeros 8 datos de la ST
+tail(AirPassengers,n=8)# muestra los ultimos 8 datos de la ST
+plot(AirPassengers)
+plot(AirPassengers,xlab="Años",ylab="Número
+     de pasajeros",type="s")
+
+#########Ejercicio Clase#########
+#de la pagina del inegi bajar la tasa informalidad laboral
+#desde el 2005 al 2017 esta base la importaran a R y la declararan ST
+#con el inicio, fin y frecuenciasde la ST una vez que hayan declarado 
+#la serie usar la funcion print, lenght, head, tail (con 10 datos) y 
+#explicarlas graficar la serie de tiempo con 3 tipos de graficas diferentes 
+#y tres colores, ademas investigar y usar las funciones time, deltat,cycle
+#y frequency y explicar para que sirven 
+
+infor4 <- read.csv("file:///C:/Users/azkam mora/Downloads/Info.csv")
+
+pobt<-ts(infor4,frequency = 4,start = c(2005,1),end=c(2017,4))
+print(pobt)#imprime la serie de tiempo de a cuerdo a su frecencia y con sus fechas de inicio y final 
+length(pobt)#te dice la cantidad de los datos en la ST 49
+head(pobt,n=10)# muestra los primeros 10 datos de la ST
+tail(pobt,n=10)# muestra los ultimos 10 datos de la ST
+plot(pobt,type="s",xlab="Años",ylab="Tasa de Informalidad",col="darkmagenta")
+plot(pobt,type="b",xlab="Años",ylab="Tasa de Informalidad",col="deeppink2")
+plot(pobt,type="p",xlab="Años",ylab="Tasa de Informalidad",col="deepskyblue4")
+
+help("time")
+#TIME creates the vector of times at which a time series was sampled.
+#CYCLE gives the positions in the cycle of each observation.
+#FREQUENCY returns the number of samples per unit time
+#DELTAT the time interval between observations
+
+time(pobt) #Te muestra cuando levantaron la serie de tiempo de a cuerdo a sus datos
+cycle(pobt)# la posicion en el ciclo donde ocurrio la observacion
+frequency(pobt)#el nuemro de muestras por unidad de tiempo 
+deltat(pobt)#el intervalo de tiempo entre cada observacion 
