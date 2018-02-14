@@ -1,0 +1,20 @@
+
+###Datos de registro de enfermos del 2000 al 2010 semestral 
+
+enf<-c(350,358,367,367,380,388,402,415,432,450,NA,NA,NA,NA,367,342,324,315,310,298)
+
+#grafique este vector
+plot(enf)
+#declaren y grafiquen la serie
+enfe<-ts(enf,frequency = 2,start = c(2000,1),end = c(2010,2))
+#imputar datos faltantes ¿como lo harian?
+enfe[11:14]<-mean(enfe,na.rm = T)#imputar por la media 
+enfe
+plot(enfe)
+#grafiquen la nueva Serie con la imputacion
+#grafiquen la serie de tiempo 
+
+#EuStockMarkets con la funcion plot, ¿Que observan?
+plot(EuStockMarkets)
+#ahora grafiquen EuStockMarketscon la siguiente funcion 
+ts.plot(EuStockMarkets,col=1:4)
