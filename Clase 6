@@ -1,0 +1,19 @@
+serie<- sample(300:1000,120)
+seriets<- ts(serie, frequency=12, start = 2002)
+tdesco<- decompose(seriets)
+plot(tdesco)
+names(tdesco)
+##Valor serie de tiempo en enero 2013##
+seriets
+tdesco$trend
+tdesco$seasonal
+tdesco$random
+
+# Bajar el pib de México desde 1950 (tasa de crecimiento anual de pib) hasta 2015,dividir 
+#esta grafica en 2 series de tiempo, 1) grafica 1950 a 1980 y 2) de 1981 hasta 2015 hacer una 
+#grafica general de la st(1950 a 2015) estas tres graficas mostrarlas en una sola ventana
+# las graficas con titulo principal, etiqueta eje (x,y) y tambien con subtitulo(fuente de los 
+#datos)...
+# descomponer las tres series y comprobar que la serie es igual atendencia, estacionalidad y 
+#aleatorio en año 1980, 2000 y 2015 interpretar y analizar estas grafiacas... 
+#analisis asociado a aspectos economicos y politicos que hayan pasado (4 sucesos)
