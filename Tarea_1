@@ -1,0 +1,31 @@
+# Bajar el pib de México desde 1950 (tasa de crecimiento anual de pib) hasta 2015,dividir 
+#esta grafica en 2 series de tiempo, 1) grafica 1950 a 1980 y 2) de 1981 hasta 2015 hacer una 
+#grafica general de la st(1950 a 2015) estas tres graficas mostrarlas en una sola ventana
+# las graficas con titulo principal, etiqueta eje (x,y) y tambien con subtitulo(fuente de los 
+#datos)...
+# descomponer las tres series y comprobar que la serie es igual atendencia, estacionalidad y 
+#aleatorio en año 1980, 2000 y 2015 interpretar y analizar estas grafiacas... 
+#analisis asociado a aspectos economicos y politicos que hayan pasado (4 sucesos)
+
+PIB <- read.csv("file:///C:/Users/azkam mora/Desktop/Series de tiempo/PIB.csv")
+serie1<- ts(PIB, frequency=2, start = 1961,end=1980)
+serie2<- ts(PIB, frequency=2, start = 1981,end=2015)
+serie3<- ts(PIB, frequency=2, start = 1961,end=2015)
+
+plot(serie1,xlab="Año",ylab="Porcentaje de crecimiento",main="1961-1980", sub="Banco Mundial de Datos-Crecimiento del PIB (% anual)",col.main="red",col.sub="red")
+plot(serie2,xlab="Año",ylab="Porcentaje de crecimiento",main="1981-2015", sub="Banco Mundial de Datos-Crecimiento del PIB (% anual)",col.main="darkviolet",col.sub="darkviolet")
+plot(serie3,xlab="Año",ylab="Porcentaje de crecimiento",main="1961-2015", sub="Banco Mundial de Datos-Crecimiento del PIB (% anual)",col.main="green",col.sub="green")
+
+x11() 
+layout(1:3) 
+plot(serie1,xlab="Año",ylab="Porcentaje de crecimiento",main="1961-1980", sub="Banco Mundial de Datos-Crecimiento del PIB (% anual)",col.main="red",col.sub="red")
+plot(serie2,xlab="Año",ylab="Porcentaje de crecimiento",main="1981-2015", sub="Banco Mundial de Datos-Crecimiento del PIB (% anual)",col.main="darkviolet",col.sub="darkviolet")
+plot(serie3,xlab="Año",ylab="Porcentaje de crecimiento",main="1961-2015", sub="Banco Mundial de Datos-Crecimiento del PIB (% anual)",col.main="green",col.sub="green")
+
+st1desco<- decompose(serie1)
+st2desco<- decompose(serie2)
+st3desco<- decompose(serie3)
+
+st1desco
+st2desco
+st3desco
