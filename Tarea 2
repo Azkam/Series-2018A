@@ -1,0 +1,35 @@
+###Ejercicio con una serie de tiempo###
+#apliquen los 4 metodos de pronosticos y grafiquenlos segun las graficas elijan que metodo es el mejor 
+#para pronosticar y tambien grafiquen los datos ajustados y planteen segun su grafica cual es el metodo 
+#que mejor ajusta a los datos reales
+
+#banorte serie de tiempo un año atras  diario 
+
+Banorte <- read.csv("file:///C:/Users/azkam mora/Downloads/GFNORTEO.MX.csv")
+CBanorte <- ts(Banorte[,5],start=c(2017,66),frequency = 365)
+require(fpp)
+CBanorte
+
+Banmod1 <- meanf(CBanorte,h=10)
+Banmod2 <- naive(CBanorte,h=10)
+Banmod3 <- snaive(CBanorte,h=10)
+Banmod4 <- rwf(CBanorte,h=10,drift=TRUE)
+
+x11()
+plot(Banmod1, main="Precios de Cerre GFNORTEO (Banorte)",col="springgreen4")
+lines(Banmod1$mean,col="blueviolet")
+lines(Banmod2$mean,col="cadetblue4")
+lines(Banmod3$mean,col="magenta")
+lines(Banmod4$mean,col="deeppink2")
+legend("topleft",lty=1,col=c("blueviolet","cadetblue4","magenta","deeppink2"),legend = c("media","ingenuo","ingenuo estacional","deriva"))
+#El pronostico mas optimista seria el deriva ya que promedio de los combios historicos de la ST tienden a subir
+
+##########DATOS AJUSTADOS##########
+x11()
+plot(Banmod1, main="Precios de Cerre GFNORTEO (Banorte)",col="springgreen4")
+lines(Banmod1$fitted,col="blueviolet")
+lines(Banmod2$fitted,col="cadetblue4")
+lines(Banmod3$fitted,col="magenta")
+lines(Banmod4$fitted,col="deeppink2")
+legend("topleft",lty=1,col=c("blueviolet","cadetblue4","magenta","deeppink2"),legend = c("media","ingenuo","ingenuo estacional","deriva"))
+#El mejor pronostic esta entre el ingenuo estacional y el deriva 
