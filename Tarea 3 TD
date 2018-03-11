@@ -1,0 +1,428 @@
+require(foreign)
+sdemt417<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt417.dbf"))
+desocupado <- subset(sdemt417,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt417,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)                  
+tasadesocupacion417 <- (desocupados/ocupados)*100
+tasadesocupacion417
+
+sdemt317<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt317.dbf"))
+desocupado <- subset(sdemt317,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt317,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion317 <- ((desocupados/ocupados)*100)
+tasadesocupacion317
+
+sdemt217<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt217.dbf"))
+desocupado <- subset(sdemt217,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt217,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion217 <- ((desocupados/ocupados)*100)
+tasadesocupacion217
+
+sdemt117<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt117.dbf"))
+desocupado <- subset(sdemt117,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt117,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion117 <- ((desocupados/ocupados)*100)
+tasadesocupacion117
+
+
+sdemt416<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt416.dbf"))
+desocupado <- subset(sdemt416,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt416,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)                  
+tasadesocupacion416 <- (desocupados/ocupados)*100
+tasadesocupacion416
+
+sdemt316<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt316.dbf"))
+desocupado <- subset(sdemt316,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt316,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion316 <- ((desocupados/ocupados)*100)
+tasadesocupacion316
+
+sdemt216<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt216.dbf"))
+desocupado <- subset(sdemt216,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt216,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion216 <- ((desocupados/ocupados)*100)
+tasadesocupacion216
+
+sdemt116<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt116.dbf"))
+desocupado <- subset(sdemt116,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt116,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion116 <- ((desocupados/ocupados)*100)
+tasadesocupacion116
+
+
+sdemt415<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt415.dbf"))
+desocupado <- subset(sdemt415,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt415,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)                  
+tasadesocupacion415 <- (desocupados/ocupados)*100
+tasadesocupacion415
+
+sdemt315<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt315.dbf"))
+desocupado <- subset(sdemt315,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt315,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion315 <- ((desocupados/ocupados)*100)
+tasadesocupacion315
+
+sdemt215<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt215.dbf"))
+desocupado <- subset(sdemt215,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt215,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion215 <- ((desocupados/ocupados)*100)
+tasadesocupacion215
+
+sdemt115<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt115.dbf"))
+desocupado <- subset(sdemt115,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt117,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion115 <- ((desocupados/ocupados)*100)
+tasadesocupacion115
+
+
+sdemt414<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt414.dbf"))
+desocupado <- subset(sdemt414,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt414,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)                  
+tasadesocupacion414 <- (desocupados/ocupados)*100
+tasadesocupacion414
+
+sdemt314<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt314.dbf"))
+desocupado <- subset(sdemt314,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt314,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion314 <- ((desocupados/ocupados)*100)
+tasadesocupacion314
+
+sdemt214<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt214.dbf"))
+desocupado <- subset(sdemt214,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt214,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion214 <- ((desocupados/ocupados)*100)
+tasadesocupacion214
+
+sdemt114<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt114.dbf"))
+desocupado <- subset(sdemt114,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt114,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion114 <- ((desocupados/ocupados)*100)
+tasadesocupacion114
+
+
+sdemt413<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt413.dbf"))
+desocupado <- subset(sdemt413,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt413,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)                  
+tasadesocupacion413 <- (desocupados/ocupados)*100
+tasadesocupacion413
+
+sdemt313<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt313.dbf"))
+desocupado <- subset(sdemt313,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt313,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion313 <- ((desocupados/ocupados)*100)
+tasadesocupacion313
+
+sdemt213<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt213.dbf"))
+desocupado <- subset(sdemt213,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt213,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion213 <- ((desocupados/ocupados)*100)
+tasadesocupacion213
+
+sdemt113<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt113.dbf"))
+desocupado <- subset(sdemt113,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt113,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion113 <- ((desocupados/ocupados)*100)
+tasadesocupacion113
+
+
+sdemt412<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt412.dbf"))
+desocupado <- subset(sdemt412,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt412,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)                  
+tasadesocupacion412 <- (desocupados/ocupados)*100
+tasadesocupacion412
+
+sdemt312<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt312.dbf"))
+desocupado <- subset(sdemt312,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt312,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion312 <- ((desocupados/ocupados)*100)
+tasadesocupacion312
+
+sdemt212<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt212.dbf"))
+desocupado <- subset(sdemt212,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt212,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion212 <- ((desocupados/ocupados)*100)
+tasadesocupacion212
+
+sdemt112<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt112.dbf"))
+desocupado <- subset(sdemt112,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt112,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion112 <- ((desocupados/ocupados)*100)
+tasadesocupacion112
+
+
+sdemt411<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt411.dbf"))
+desocupado <- subset(sdemt411,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt411,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)                  
+tasadesocupacion411 <- (desocupados/ocupados)*100
+tasadesocupacion411
+
+sdemt311<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt311.dbf"))
+desocupado <- subset(sdemt311,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt311,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion311 <- ((desocupados/ocupados)*100)
+tasadesocupacion311
+
+sdemt211<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt211.dbf"))
+desocupado <- subset(sdemt211,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt211,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion211 <- ((desocupados/ocupados)*100)
+tasadesocupacion211
+
+sdemt111<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt111.dbf"))
+desocupado <- subset(sdemt111,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt111,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion111 <- ((desocupados/ocupados)*100)
+tasadesocupacion111
+
+
+sdemt410<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt410.dbf"))
+desocupado <- subset(sdemt410,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt410,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)                  
+tasadesocupacion410 <- (desocupados/ocupados)*100
+tasadesocupacion410
+
+sdemt310<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt310.dbf"))
+desocupado <- subset(sdemt310,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt310,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion310 <- ((desocupados/ocupados)*100)
+tasadesocupacion310
+
+sdemt210<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt210.dbf"))
+desocupado <- subset(sdemt210,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt210,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion210 <- ((desocupados/ocupados)*100)
+tasadesocupacion210
+
+sdemt110<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt110.dbf"))
+desocupado <- subset(sdemt110,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt110,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion110 <- ((desocupados/ocupados)*100)
+tasadesocupacion110
+
+
+sdemt409<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt409.dbf"))
+desocupado <- subset(sdemt409,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt409,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)                  
+tasadesocupacion409 <- (desocupados/ocupados)*100
+tasadesocupacion409
+
+sdemt309<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt309.dbf"))
+desocupado <- subset(sdemt309,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt309,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion309 <- ((desocupados/ocupados)*100)
+tasadesocupacion309
+
+sdemt209<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt209.dbf"))
+desocupado <- subset(sdemt209,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt209,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion209 <- ((desocupados/ocupados)*100)
+tasadesocupacion209
+
+sdemt109<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt109.dbf"))
+desocupado <- subset(sdemt109,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt109,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion109 <- ((desocupados/ocupados)*100)
+tasadesocupacion109
+
+
+sdemt408<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt408.dbf"))
+desocupado <- subset(sdemt408,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt408,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)                  
+tasadesocupacion408 <- (desocupados/ocupados)*100
+tasadesocupacion408
+
+sdemt308<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt308.dbf"))
+desocupado <- subset(sdemt308,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt308,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion308 <- ((desocupados/ocupados)*100)
+tasadesocupacion308
+
+sdemt208<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt208.dbf"))
+desocupado <- subset(sdemt208,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt208,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion208 <- ((desocupados/ocupados)*100)
+tasadesocupacion208
+
+sdemt108<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt108.dbf"))
+desocupado <- subset(sdemt108,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt108,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion108 <- ((desocupados/ocupados)*100)
+tasadesocupacion108
+
+
+sdemt407<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt407.dbf"))
+desocupado <- subset(sdemt407,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt407,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)                  
+tasadesocupacion407 <- (desocupados/ocupados)*100
+tasadesocupacion407
+
+sdemt307<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt307.dbf"))
+desocupado <- subset(sdemt307,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt307,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion307 <- ((desocupados/ocupados)*100)
+tasadesocupacion307
+
+sdemt207<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt207.dbf"))
+desocupado <- subset(sdemt207,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt207,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion207 <- ((desocupados/ocupados)*100)
+tasadesocupacion207
+
+sdemt107<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt107.dbf"))
+desocupado <- subset(sdemt107,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt107,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion107 <- ((desocupados/ocupados)*100)
+tasadesocupacion107
+
+
+sdemt406<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt406.dbf"))
+desocupado <- subset(sdemt406,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt406,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)                  
+tasadesocupacion406 <- (desocupados/ocupados)*100
+tasadesocupacion406
+
+sdemt306<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt306.dbf"))
+desocupado <- subset(sdemt306,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt306,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion306 <- ((desocupados/ocupados)*100)
+tasadesocupacion306
+
+sdemt206<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt206.dbf"))
+desocupado <- subset(sdemt206,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt206,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion206 <- ((desocupados/ocupados)*100)
+tasadesocupacion206
+
+sdemt106<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt106.dbf"))
+desocupado <- subset(sdemt106,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt106,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion106 <- ((desocupados/ocupados)*100)
+tasadesocupacion106
+
+
+sdemt405<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt405.dbf"))
+desocupado <- subset(sdemt405,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt405,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)                  
+tasadesocupacion405 <- (desocupados/ocupados)*100
+tasadesocupacion405
+
+sdemt305<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt305.dbf"))
+desocupado <- subset(sdemt305,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt305,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion305 <- ((desocupados/ocupados)*100)
+tasadesocupacion305
+
+sdemt205<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt205.dbf"))
+desocupado <- subset(sdemt205,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt205,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion205 <- ((desocupados/ocupados)*100)
+tasadesocupacion205
+
+sdemt105<- data.frame(read.dbf("C://Users//azkam mora//Desktop//ENOE//sdemt105.dbf"))
+desocupado <- subset(sdemt105,ENT==14 & CLASE3==6)
+ocupado <- subset(sdemt105,ENT==14 & as.numeric(EDA)<=66 & as.numeric(EDA)>=16)
+ocupados <-nrow(ocupado)
+desocupados <-nrow(desocupado)
+tasadesocupacion105 <- ((desocupados/ocupados)*100)
+tasadesocupacion105
