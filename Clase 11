@@ -1,39 +1,26 @@
-acci<-read.csv ("file:///C:/Users/azkam mora/Desktop/Accidentes.csv")
-x <-rbind(acci)[2:21,]
+accid <- read.csv("file:///C:/Users/azkam mora/Desktop/Accidentes.csv")
+acci <- rbind.data.frame(accid[2:21,])
 
+a <- as.matrix(rbind(acci)[5:17,2])
+b <- as.matrix(rbind(acci)[5:17,3])
+c <- as.matrix(rbind(acci)[5:17,4])
+d <- as.matrix(rbind(acci)[5:17,5])
+e <- as.matrix(rbind(acci)[5:17,6])
+f <- as.matrix(rbind(acci)[5:17,7])
+g <- as.matrix(rbind(acci)[5:17,8])
+h <- as.matrix(rbind(acci)[5:17,9])
+i <- as.matrix(rbind(acci)[5:17,10])
+j <- as.matrix(rbind(acci)[5:17,11])
+k <- as.matrix(rbind(acci)[5:17,12])
+l <- as.matrix(rbind(acci)[5:17,13])
+m <- as.matrix(rbind(acci)[5:17,14])
+n <- as.matrix(rbind(acci)[5:17,15])
+ñ <- as.matrix(rbind(acci)[5:17,16])
+o <- as.matrix(rbind(acci)[5:17,17])
+p <- as.matrix(rbind(acci)[5:17,18])
+q <- as.matrix(rbind(acci)[5:17,19])
+r <- as.matrix(rbind(acci)[5:17,20])
+s <- as.matrix(rbind(acci)[5:17,21])
+serie <- rbind(a,b,c,d,e,f,g,h,i,j,k,l,m,n,ñ,o,p,q,r,s)
 
-c97<- as.matrix(rbind(x)[5:17,2])
-c98<- as.matrix(rbind(x)[5:17,3])
-c99<- as.matrix(rbind(x)[5:17,4])
-c00<- as.matrix(rbind(x)[5:17,5])
-c01<- as.matrix(rbind(x)[5:17,6])
-c02<- as.matrix(rbind(x)[5:17,7])
-c03<- as.matrix(rbind(x)[5:17,8])
-c04<- as.matrix(rbind(x)[5:17,9])
-c05<- as.matrix(rbind(x)[5:17,10])
-c06<- as.matrix(rbind(x)[5:17,11])
-c07<- as.matrix(rbind(x)[5:17,12])
-c08<- as.matrix(rbind(x)[5:17,13])
-c09<- as.matrix(rbind(x)[5:17,14])
-c10<- as.matrix(rbind(x)[5:17,15])
-c11<- as.matrix(rbind(x)[5:17,16])
-c12<- as.matrix(rbind(x)[5:17,17])
-c13<- as.matrix(rbind(x)[5:17,18])
-c14<- as.matrix(rbind(x)[5:17,19])
-c15<- as.matrix(rbind(x)[5:17,20])
-c16<- as.matrix(rbind(x)[5:17,21])
-
-serie <- rbind(c97,c98, c99, c00,c01, c02, c03, c04,c05,c06, c07,c08,c09,c10,c11,c12,
-               c13, c14, c15, c16)
 View(serie)
-
-
-
-
-accidentes <-read.csv ("file:///C:/Users/azkam mora/Desktop/Accidentes.csv")
-accidente <-accidentes [-1,1]
-accidente <-accidentes [, - 1]
-accidente <-accidentes [, - 3]
-trs <-t (t (accidente))
-ctrs <-c (trs)
-accts <-ts (ctrs, frequency = 13, start (1997))
