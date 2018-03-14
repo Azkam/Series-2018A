@@ -22,5 +22,5 @@ q <- as.matrix(rbind(acci)[5:17,19])
 r <- as.matrix(rbind(acci)[5:17,20])
 s <- as.matrix(rbind(acci)[5:17,21])
 serie <- rbind(a,b,c,d,e,f,g,h,i,j,k,l,m,n,ñ,o,p,q,r,s)
-
+serie <- serie[-c(13,26,39,52,65,78,91,104,117,130,143,156,169,195,208,221,234,247,260), ]
 View(serie)
