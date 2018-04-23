@@ -1,0 +1,27 @@
+PIB <- read.csv("file:///C:/Users/azkam mora/Desktop/PIB.csv")
+pib <- ts(PIB,start=1961,frequency = 1)
+require(fpp)
+mod1 <- auto.arima(pib,seasonal=F)
+mod1
+
+#pronosticar
+x11()
+plot(forecast(mod1,h=10))
+
+#con la funcion auto.arima encontrar el modelo arima de las sig. series de tiempo y plantearlo en ecuacion 
+#1) Apple
+
+ap <- read.csv("file:///C:/Users/azkam mora/Desktop/AAPL.csv")
+app <- ts(ap,start=2017,frequency = 252)
+mod2 <- auto.arima(app,seasonal=F)
+mod2
+x11()
+plot(forecast(mod2,h=10))
+
+#2) Tasa de asalariado 
+as <- read.csv("file:///C:/Users/azkam mora/Desktop/T.asalariado.csv")
+asa <- ts(as,start=2005,frequency = 4)
+mod2 <- auto.arima(asa,seasonal=F)
+mod2
+x11()
+plot(forecast(mod2,h=10))
