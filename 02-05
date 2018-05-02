@@ -1,0 +1,117 @@
+bimbo <- read.csv("file:///C:/Users/azkam mora/Downloads/BIMBOA.MX.csv")[,5]
+bimbot <- ts(bimbo,frequency = 252,start = 2017)
+
+require(fpp)
+##Vamos a revisar si la series es estacionaria, eso lo hacemos con adf.test
+adf.test(bimbot)
+# en esta prueba esperamos un p-value menor a .05 sin embargo en la serie bimbot obtenemos
+#un p-value de .08 por lo que hay que aplicar una diferenciacion para convertir la serie 
+#en estacionaria 
+dbimbot <- diff(bimbot)
+adf.test(dbimbot)
+#ahora que tenemos la ST estacionaria ya podemos aplicar un modelo ARIMA, por lo que hay 
+#que elegir los valores de p,d y q, para elegir los valores de p y q se utiliza la funcion 
+#de autocorrelacion y la funcion de autocorrelacion parcial (pacf)
+#primero aplicamos la funcion de autocorrelacion para elegir el valor de q
+x11()
+acf(dbimbot)
+#una vez que apliquemos el acf vamos a observarla grafica y ver cuantas lineas sobrepasan el 
+#margen y el numero de lineas son el valor de p
+x11()
+pacf(dbimbot)
+
+#modelo 1
+mod1bim <- Arima(bimbot,order = c(0,1,0))
+mod1bim
+
+#modelo 2
+mod2bim <- Arima(bimbot,order = c(1,1,2))
+mod2bim
+
+#modelo 3
+mod3bim <- Arima(bimbot,order = c(3,1,2))
+mod3bim
+
+#modelo 4
+mod4bim <- Arima(bimbot,order = c(2,1,2))
+mod4bim
+
+#elegimos el mod4bim 
+
+mod4 <- forecast(mod4bim,h=12)
+x11()
+plot(forecast(mod4bim,h=12),include=45)
+
+mod5bim <- auto.arima(bombot)
+mod5bim
+
+x11()
+plot(forecast(mod5bim,h=12),include=45)
+     
+###RLRGIT DOS SERIES DE TIEMPO DIFERENTES
+# Alas que hemos visto en clase de repetir el procedimiento para elegir un modelo 
+#arima "mejor"segun los criterios AICC y comparalos con un modelo auto.arima 
+     
+
+ 
+base <- data.frame(EuStockMarkets)[,1]
+ST <- ts(eustock,frequency = ,start = 1991)
+require(fpp)
+
+adf.test(ST)
+dST <- diff(ST)
+adf.test(dST)
+
+x11()
+acf(dST)
+#q=6
+
+x11()
+pacf(dST)
+#p=5
+
+mod1 <- Arima(ST,order = c(5,1,6))
+mod1
+
+mod2 <- auto.arima(ST)
+mod2
+
+#elegimos el mod1
+
+x11()
+plot(forecast(mod1,h=12),include=45)
+x11()
+plot(forecast(mod2,h=12),include=45)
+
+
+
+
+
+base <- data.frame(LakeHuron)
+ST <- ts(base,frequency =1 ,start = 1875)
+require(fpp)
+
+adf.test(ST)
+dST <- diff(ST)
+adf.test(dST)
+
+x11()
+acf(dST)
+#q=2
+
+x11()
+pacf(dST)
+#p=1
+
+mod1 <- Arima(ST,order = c(1,1,2))
+mod1
+
+mod2 <- auto.arima(ST)
+mod2
+
+#elegimos el mod1
+
+x11()
+plot(forecast(mod1,h=12),include=45)
+x11()
+plot(forecast(mod2,h=12),include=45)
