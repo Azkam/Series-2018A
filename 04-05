@@ -1,0 +1,133 @@
+Procedimiento para aplicar modelos ARIMA
+1.	Grafica la serie para identificar componentes de la series
+2.	Si es necesario transforma con logaritmo y/o aplica diferenciación para estabilizar la seire (estacionalidad)
+3.	Examina ACF/PACF para proponer los valores de q y p 
+4.	Elige el mejor modelo mediante AICC
+Para fortalecer el procedimiento de la aplicación de los modelos ARIMA se debe tener en cuenta lo sig. 
+1.	Identificación: se debe identificar cualquier tipo de información que pueda tener impacto sobre la serie de tiempo con la finalidad proponer diversos modelos ARIMA. En esta etapa se debe hacer el análisis de la estacionariedad 
+a.	Estacionariedad de varianzas  transformaciones necesarias
+b.	Estacionariedad de media  numero de diferenciaciones para convertir la ST en estacionaria
+Por otro lado se debe seleccionar los ordenes p y q, para esta selección se debe utilizar los gráficos y correlaciones de ACF y PACF
+
+
+
+toda <- read.csv("file:///C:/Users/USUARIO/Desktop/Libro1.csv")
+asalat <- ts(toda[,2],frequency = 4,start = 2005, end = c(2015,4))
+asal <- ts(toda[,2],frequency = 4,start = 2005)
+install.packages("fpp")
+require(fpp)
+
+adf.test(asalat)
+
+x11()
+acf(asalat)
+#q=8
+x11()
+pacf(asalat)
+#p=1
+
+mod1 <- Arima(asalat,order = c(1,0,8))
+mod1
+mod2 <- auto.arima(asalat)
+mod2
+
+#elegimos el mod2 ARIMA(2,1,0)
+
+x11()
+plot(forecast(mod1,h=8),include=12)
+x11()
+plot(forecast(mod2,h=8),include=12)
+x11()
+plot(forecast(asal,h=1),include=20)
+
+###############################################################################################
+desocu <- ts(toda[,1],frequency = 4,start = 2005, end = c(2015,4))
+desocut <- ts(toda[,1],frequency = 4,start = 2005)
+
+adf.test(desocu)
+ddesocu <- diff(desocu)
+adf.test(ddesocu)
+dddesocu <- diff(ddesocu)
+adf.test(dddesocu)
+
+x11()
+acf(dddesocu)
+#q=16
+x11()
+pacf(dddesocu)
+#p=1
+
+mod1 <- Arima(desocu,order = c(1,2,16))
+mod1
+mod2 <- auto.arima(desocu)
+mod2
+
+#elegimos el mod2 ARIMA(0,1,0)
+
+x11()
+plot(forecast(mod1,h=8),include=12)
+x11()
+plot(forecast(mod2,h=8),include=12)
+x11()
+plot(forecast(desocut,h=1),include=20)
+
+
+###############################################################################################
+subocu <- ts(toda[,3],frequency = 4,start = 2005, end = c(2015,4))
+subocut <- ts(toda[,3],frequency = 4,start = 2005)
+
+adf.test(subocu)
+dsubocu <- diff(subocu)
+adf.test(dsubocu)
+
+
+x11()
+acf(dsubocu)
+#q=0
+x11()
+pacf(dsubocu)
+#p=0
+
+mod1 <- Arima(subocu,order = c(0,1,0))
+mod1
+mod2 <- auto.arima(subocu)
+mod2
+
+#es indiferecnte 
+
+x11()
+plot(forecast(mod1,h=8),include=12)
+x11()
+plot(forecast(mod2,h=8),include=12)
+x11()
+plot(forecast(subocut,h=1),include=20)
+
+###############################################################################################
+TIL! <- ts(toda[,4],frequency = 4,start = 2005, end = c(2015,4))
+TIL1t <- ts(toda[,4],frequency = 4,start = 2005)
+
+adf.test(TIL1)
+dsubocu <- diff(subocu)
+adf.test(dsubocu)
+
+
+x11()
+acf(dsubocu)
+#q=0
+x11()
+pacf(dsubocu)
+#p=0
+
+mod1 <- Arima(subocu,order = c(0,1,0))
+mod1
+mod2 <- auto.arima(subocu)
+mod2
+
+#es indiferecnte 
+
+x11()
+plot(forecast(mod1,h=8),include=12)
+x11()
+plot(forecast(mod2,h=8),include=12)
+x11()
+plot(forecast(subocut,h=1),include=20)
